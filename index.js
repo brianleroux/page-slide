@@ -44,7 +44,7 @@ module.exports = function PageSlider(container) {
         // Position the page at the starting position of the animation
         page.classList.add("page", from);
 
-        currentPage.one('webkitTransitionEnd', function(e) {
+        currentPage.addEventListener('webkitTransitionEnd', function(e) {
             e.target.remove();
         });
 
