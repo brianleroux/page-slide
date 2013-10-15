@@ -1,6 +1,6 @@
 {
   "name": "page-slide",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Browserify friendly version of coenraets PageSlider",
   "main": "index.js",
   "scripts": {
