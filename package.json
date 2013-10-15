@@ -1,0 +1,24 @@
+{
+  "name": "page-slide",
+  "version": "0.1.0",
+  "description": "Browserify friendly version of coenraets PageSlider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/brianleroux/page-slide.git"
+  },
+  "keywords": [
+    "browserify",
+    "pageslider",
+    "mobile"
+  ],
+  "author": "@coenraets",
+  "license": "Apache2",
+  "readmeFilename": "readme.md",
+  "bugs": {
+    "url": "https://github.com/brianleroux/page-slide/issues"
+  }
+}
