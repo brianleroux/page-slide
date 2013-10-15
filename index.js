@@ -36,13 +36,13 @@ module.exports = function PageSlider(container) {
         container.appendChild(page);
 
         if (!currentPage || !from) {
-            page.classList.add("page center");
+            page.classList.add("page", "center");
             currentPage = page;
             return;
         }
 
         // Position the page at the starting position of the animation
-        page.classList.add("page " + from);
+        page.classList.add("page", from);
 
         currentPage.one('webkitTransitionEnd', function(e) {
             e.target.remove();
@@ -52,8 +52,8 @@ module.exports = function PageSlider(container) {
         container[0].offsetWidth;
 
         // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
-        page.classList.add("page transition center");
-        currentPage.classList.add("page transition " + (from === "left" ? "right" : "left"));
+        page.classList.add("page", "transition", "center");
+        currentPage.classList.add("page", "transition", (from === "left" ? "right" : "left"));
         currentPage = page;
     }
 
