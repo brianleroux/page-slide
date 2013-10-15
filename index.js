@@ -33,7 +33,7 @@ module.exports = function PageSlider(container) {
     // Use this function directly if you want to control the sliding direction outside PageSlider
     this.slidePageFrom = function(page, from) {
 
-        container.append(page);
+        container.appendChild(page);
 
         if (!currentPage || !from) {
             page.classList.add("page center");
